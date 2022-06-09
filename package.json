@@ -4,10 +4,10 @@
   "version": "0.0.0",
   "scripts": {
     "git-create-repo": "gh repo create ts-react-use-context-api --public --source=. --remote=upstream",
+    "git-add-remote": "git remote add origin https://github.com/corbaz/ts-react-use-context-api.git && git branch -M main && git push -u origin main",
     "git-remote-view": "git remote -v",
     "git-remote-remove": "git remote rm upstream && git remote remove origin",
-    "git": "git add -A && git commit -m \"update\" && npm run git-push",
-    "git-push": "git remote add origin https://github.com/corbaz/ts-react-use-context-api.git && git branch -M main && git push -u origin main",
+    "git": "git add -A && git commit -m \"update\" && git push -u origin main",
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "npm run build && vite preview",
