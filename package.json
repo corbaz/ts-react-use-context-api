@@ -10,10 +10,10 @@
     "git-push": "git remote add origin https://github.com/corbaz/ts-react-use-context-api.git && git branch -M main && git push -u origin main",
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview",
+    "preview": "npm run build && vite preview",
     "ncu": "cls && ncu && ncu u && npm i",
-    "deploy-surge-sh": "surge dist ts-react-use-context-api.surge.sh && start msedge.exe https://ts-react-use-context-api.surge.sh",
-    "deploy-gh-pages": "gh-pages -d dist && start msedge.exe https://corbaz.github.io/ts-react-use-context-api"
+    "deploy-surge-sh": "npm run build && surge dist ts-react-use-context-api.surge.sh && start msedge.exe https://ts-react-use-context-api.surge.sh",
+    "deploy-gh-pages": "npm run build && gh-pages -d dist && start msedge.exe https://corbaz.github.io/ts-react-use-context-api"
   },
   "dependencies": {
     "axios": "^0.27.2",
